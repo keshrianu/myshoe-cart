@@ -1,0 +1,39 @@
+.whole{
+    display: flex;
+    margin-left: 150px;
+}
+
+.container{
+    height: 200px;
+    width:150px;
+    background-color: rgb(81, 159, 205);
+    margin: 20px 50px; 
+    border-radius: 10px;
+}
+.plus{
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.equal{
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: 700;
+}
+.contain{
+    height: 200px;
+    width:150px;
+    background-color: rgb(81, 159, 205);
+    margin: 20px 50px;
+    border-radius: 10px;
+}
+button{
+    margin: 70px 40px;
+    background-color: rgb(76, 157, 157);
+    border-radius: 10px;
+    cursor: pointer;  
+}
+h1{
+    margin: 50px;
+}
