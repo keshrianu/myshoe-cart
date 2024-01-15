@@ -102,7 +102,7 @@ const Product = ({ searchItem, items, setItems }) => {
               value="Nike"
               onChange={handleCheckboxChange}
             />
-            <label htmlFor="Nike">Nikeeeeeeeeeeee</label> <br />
+            <label htmlFor="Nike">Nike</label> <br />
             <input
               type="checkbox"
               name="Adidas"
