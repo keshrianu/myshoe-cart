@@ -8,6 +8,7 @@ import Profile from "./Product/Profile";
 import Product from "./Product/Product";
 import Page404 from "./Product/Page404";
 import Login from "./Product/Login";
+import Footer from "./Product/Footer";
 
 function App() {
   const [searchItem, setSearchItem] = useState("");
@@ -35,6 +36,7 @@ function App() {
           <Route path="/*" element={<Page404 />} />
         </Routes>
       </BrowserRouter>
+      <Footer />
     </>
   );
 }
