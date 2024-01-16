@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import style from "./Product.module.css";
+import style from "./nav.module.css";
 const Nav = ({ searchItem, setSearchItem, items }) => {
   function handleChange(event) {
     setSearchItem(event.target.value);

@@ -1,0 +1,86 @@
+.side {
+  height: 100vh;
+  width: 300px;
+  background-color: cornflowerblue;
+  margin-top: 71px;
+  position: static;
+}
+.checkbox {
+  cursor: pointer;
+  color: aliceblue;
+  background-color: darkgrey;
+  align-items: center;
+  opacity: 20px;
+}
+.checkbox input {
+  margin-right: 20px;
+}
+.table {
+  color: rgb(10, 28, 28);
+  font-size: 15px;
+  border-collapse: separate;
+  border-spacing: 40px 0;
+}
+.heading {
+  font-size: 15px;
+  color: white;
+  text-decoration: underline;
+}
+
+.img {
+  margin-top: 100px;
+  margin-left: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.img > div {
+  width: 30%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+.img p {
+  margin: 0;
+}
+.main {
+  display: flex;
+  width: 100%;
+  height: 1150px;
+}
+.imageflex {
+  display: flex;
+  gap: 180px;
+  text-align: center;
+  height: 220px;
+  width: 1000px;
+  background-color: white;
+}
+.addcart {
+  float: right;
+  margin-right: 50px;
+  margin-bottom: 30px;
+  width: 110px;
+  height: 40px;
+  cursor: pointer;
+  background-color: rgb(108, 139, 224);
+  transition: background-color 0.1s, font-size 0.5s;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgba(0, 0, 0.9, 0.9);
+  border-radius: 3px;
+}
+
+.addcart:hover {
+  background-color: rgb(71, 109, 212);
+  font-size: 16px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.sideimg {
+  width: 250px;
+  height: 140px;
+  border: 4px solid white;
+  margin: 25px;
+  font-size: 20px;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import asd from "./Image/asd.jpg";
+import asd from "../../Product/Image/asd.jpg";
 
 const Profile = ({ user }) => {
   const { name, role, email, location, joined } = user;

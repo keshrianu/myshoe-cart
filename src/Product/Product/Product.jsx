@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import style from "./Product.module.css";
-import { details, sideimg } from "./Data";
+import { details, sideimg } from "../Data";
 
 
 const Product = ({ searchItem, items, setItems }) => {
@@ -109,7 +109,7 @@ const Product = ({ searchItem, items, setItems }) => {
               value="Adidas"
               onChange={handleCheckboxChange}
             />
-            <label htmlFor="Adidas">Adidassssssssss</label> <br />
+            <label htmlFor="Adidas">Adidas</label> <br />
             <input
               type="checkbox"
               name="Reebok"

@@ -8,11 +8,22 @@ footer{
     display: flex;
     justify-content:flex-start;
    margin-top: 50px;
+p{
+    font-size: 14px;
+    color: rgb(234, 240, 236);
+    cursor: pointer;
+}
+h3{
+    font-size: 13px;
+    color: rgb(151, 199, 88);
+}
 }
 .about{
     margin-right: 30px;
     margin-left: 60px;
     margin-top: 20px;
+   
+    
 }
 .helps{
     margin-right: 30px;
@@ -32,10 +43,6 @@ footer{
 }
 h3{
     font-size: 13px;
-    color: grey;
+    color: rgb(236, 187, 187);
 }
-p{
-    font-size: 14px;
-    color: rgb(119, 129, 122);
-    cursor: pointer;
-}
+
