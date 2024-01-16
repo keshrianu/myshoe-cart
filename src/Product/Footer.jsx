@@ -1,11 +1,11 @@
 import React from "react";
-import "./footer.css";
+import style  from "./footer.module.css";
 const Footer = () => {
   return (
     <>
       <footer>
-        <div className="footerflex">
-          <div className="about">
+        <div className={style.footerflex}>
+          <div className={style.about}>
             <h3>ABOUT</h3>
             <p>
               Contact Us
@@ -25,7 +25,7 @@ const Footer = () => {
               Corporate Information
             </p>
           </div>
-          <div className="helps">
+          <div className={style.helps}>
             <h3>HELP</h3>
             <p>
               Payments
@@ -39,7 +39,7 @@ const Footer = () => {
               Report Infringement
             </p>
           </div>
-          <div className="policy">
+          <div className={style.policy}>
             <h3>CONSUMER POLICY</h3>
             <p>
               Cancellation & Returns
@@ -57,7 +57,7 @@ const Footer = () => {
               EPR Compliance
             </p>
           </div>
-          <div className="social">
+          <div className={style.social}>
             <h3>SOCIAL</h3>
             <p>
               Facebook <br />
@@ -67,10 +67,10 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="mail">
+          <div className={style.mail}>
             <h3>Mail Us</h3>
             <p>
-              {" "}
+             
               ShoeCart Internet Private Limited, <br />
               Buildings Alyssa, Begonia &<br />
               Clove Embassy Tech Village,
@@ -83,7 +83,7 @@ const Footer = () => {
               <br />
             </p>
           </div>
-          <div className="office">
+          <div className={style.office}>
             <h3>Registered Office Address:</h3>
             <p>
               

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Product.css";
+import style from "./Product.module.css";
 import { details, sideimg } from "./Data";
 
 
@@ -73,9 +73,9 @@ const Product = ({ searchItem, items, setItems }) => {
   return (
     <>
      
-      <div className="main">
-        <div className="side">
-          <div className="sideimg">
+      <div className={style.main}>
+        <div className={style.side}>
+          <div className={style.sideimg}>
             {sideimg[imageIndex].img}
             {sideimg[imageIndex].Product_brand}
           </div>
@@ -95,7 +95,7 @@ const Product = ({ searchItem, items, setItems }) => {
           />
           <br />
 
-          <div className="checkbox">
+          <div className={style.checkbox}>
             <input
               type="checkbox"
               name="Nike"
@@ -109,7 +109,7 @@ const Product = ({ searchItem, items, setItems }) => {
               value="Adidas"
               onChange={handleCheckboxChange}
             />
-            <label htmlFor="Adidas">Adidas</label> <br />
+            <label htmlFor="Adidas">Adidassssssssss</label> <br />
             <input
               type="checkbox"
               name="Reebok"
@@ -128,9 +128,9 @@ const Product = ({ searchItem, items, setItems }) => {
             <br />
           </div>
 
-          <table className="table">
+          <table className={style.table}>
             <thead>
-              <tr className="heading">
+              <tr className={style.heading}>
                 <th>Product</th>
                 <th>Brand</th>
                 <th>Price</th>
@@ -148,7 +148,7 @@ const Product = ({ searchItem, items, setItems }) => {
           </table>
         </div>
 
-        <div className="img">
+        <div className={style.img}>
        
           {newlist.map((product, index) => (
             <div key={index}>
@@ -156,7 +156,7 @@ const Product = ({ searchItem, items, setItems }) => {
               <p>{product.Product}</p>
               <p>{product.Product_brand}</p>
               <p>Rs {product.Price} /-</p>
-              <button className="addcart" onClick={added}>
+              <button className={style.addcart} onClick={added}>
                 Add To Cart
               </button>
             </div>

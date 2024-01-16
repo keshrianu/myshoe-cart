@@ -1,14 +1,14 @@
 import React from 'react'
-import "./login.css"
+import style from "./login.module.css"
 import loginimage1 from "./Image/loginimage1.jpg"
 const Login = () => {
 
   return (
     <>
-        <div className="row">
+        <div className={style.row}>
       <img src={loginimage1} alt="img" className="background-image" />
-      <div className="container">
-        <div className="login">
+      <div className={style.container}>
+        <div className={style.login}>
           <h1>ShoeCart</h1>
           <label htmlFor="username">UserName:</label>
           <input type="text" />

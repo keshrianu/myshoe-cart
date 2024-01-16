@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import style from "./Product.module.css";
 const Nav = ({ searchItem, setSearchItem, items }) => {
   function handleChange(event) {
     setSearchItem(event.target.value);
@@ -7,8 +7,8 @@ const Nav = ({ searchItem, setSearchItem, items }) => {
 
   return (
     <>
-      <nav className="nav">
-        <h1 className="shoe" >
+      <nav className={style.nav}>
+        <h1 className={style.shoe} >
           <Link to="/product" style={{ color: 'white' }}>ShoeCart</Link>
         </h1>
         <input
@@ -17,17 +17,17 @@ const Nav = ({ searchItem, setSearchItem, items }) => {
           value={searchItem}
           onChange={(e) => handleChange(e)}
         />
-        <p className="search">🔍</p>
-        <h4 className="cart">
+        <p className={style.search}>🔍</p>
+        <h4 className={style.cart}>
           <Link to="/cart" style={{ color: 'white' }}>Cart {items}</Link>
         </h4>
-        <h4 className="wish">
+        <h4 className={style.wish}>
           <Link to="/wish"style={{ color: 'white' }}>About</Link>
         </h4>
-        <h4 className="help">
+        <h4 className={style.help}>
           <Link to="/help" style={{ color: 'white' }}>HelpCenter</Link>
         </h4>
-        <h4 className="profile">
+        <h4 className={style.profile}>
           <Link to="/profile" style={{ color: 'white' }}>🙎‍♂️ Anurag Keshri</Link>
         </h4>
       </nav>
