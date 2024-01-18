@@ -1,8 +1,9 @@
 import React from 'react'
-
+import style from './about.module.css'
 const About = () => {
   return (
     <>
+    <div className={style.about}>
      <h1>About [ShoeCart]</h1> 
 <h2>Our Mission</h2>
 <h3>At  <b>ShoeCart</b>, we are driven by a clear mission:</h3>
@@ -28,6 +29,7 @@ Our customers are at the heart of everything we do. We prioritize your satisfact
 We love hearing from our community. Whether you have questions, suggestions, or just want to say hello, feel free to reach out to us on shoecart@gmail.com.<br />
 
 Thank you for being a part of the <b>ShoeCart</b> journey. We look forward to continuing to serve and inspire you.
+</div>
     </>
   )
 }

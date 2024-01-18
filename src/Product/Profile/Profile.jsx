@@ -1,19 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import asd from "../../Product/Image/asd.jpg";
+import style from './profile.module.css'
 
 const Profile = ({ user }) => {
   const { name, role, email, location, joined } = user;
 
   return (
-    <div className="cntainer">
-      <div className="user-info">
+    <div className={style.cntainer}>
+      <div className={style.userinfo}>
         <img src={asd} alt="Profile_Picture" className="" />
         <h1>{name}</h1>
         <p>{role}</p>
       </div>
 
-      <div className="user-details">
+      <div className={style.userdetails}>
         <div>
           <span>Email:</span>
           <span>{email}</span>

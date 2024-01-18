@@ -1,12 +1,14 @@
 import React from 'react'
+import style from './help.module.css'
 
 const HelpCenter = () => {
   return (
     <>
+ <div className={style.margin} >
        < h1>ShoeCart Help Center</h1> 
 <h2>Welcome to ShoeCart Help Center</h2>
 Frequently Asked Questions (FAQs)
-<h3>1. Ordering & Shipping</h3>
+<h3 >1. Ordering & Shipping</h3>
 How can I place an order?
 
 To place an order, simply browse our collection, select your desired shoes, and add them to your cart. Follow the checkout process to complete your purchase.
@@ -42,7 +44,7 @@ If you can't find the information you need in our Help Center, feel free to Cont
 
 Thank you for shopping at ShoeCart!
       
-    
+</div>
     </>
   )
 }
