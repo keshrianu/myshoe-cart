@@ -9,10 +9,14 @@ import Product from "./Product/Product/Product";
 import Page404 from "./Product/Page404";
 import Login from "./Product/Login/Login";
 import Footer from "./Product/Footer/Footer";
+import { details } from "./Product/Data";
+import ShoeDes from "./Shoe/ShoeDes";
+
 
 function App() {
   const [searchItem, setSearchItem] = useState("");
   const [items, setItems] = useState(0);
+  const [newlist, setnewlist] = useState([...details]);
 
   const user = {
     name: "Anurag keshri",
@@ -28,12 +32,15 @@ function App() {
         <Nav setSearchItem={setSearchItem} searchItem={searchItem} items={items} />
         <Routes>
           <Route path="/" element={<Login />} />
-          <Route path="/product" element={<Product searchItem={searchItem} items={items} setItems={setItems} />} />
+          <Route path="/product" element={<Product searchItem={searchItem} items={items} setItems={setItems} newlist={newlist}  setnewlist={setnewlist}/>} />
           <Route path="/help" element={<HelpCenter />} />
           <Route path="/wish" element={<About />} />
           <Route path="/profile" element={<Profile user={user} />} />
           <Route path="/cart" element={<Cart items={items} />} />
+          <Route path="/shoe_product/:productId" element={<ShoeDes newlist={newlist}  />} />
+
           <Route path="/*" element={<Page404 />} />
+
         </Routes>
       </BrowserRouter>
       <Footer />

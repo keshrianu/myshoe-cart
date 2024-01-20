@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
 import style from "./Product.module.css";
 import { details, sideimg } from "../Data";
+import { Link } from "react-router-dom";
 
-
-const Product = ({ searchItem, items, setItems }) => {
+const Product = ({ searchItem, items, setItems, newlist, setnewlist }) => {
   const [priceRange, setPriceRange] = useState([10, 80]);
   const [selectedBrands, setSelectedBrands] = useState([]);
   const [imageIndex, setImageIndex] = useState(0);
-  const [newlist, setnewlist] = useState([...details]);
- 
+
 
   let filteredData = details.filter((curItem) => {
     if (searchItem === "") {
@@ -18,15 +17,12 @@ const Product = ({ searchItem, items, setItems }) => {
     ) {
       return curItem;
     }
-    return null; 
+    return null;
   });
 
   useEffect(() => {
     setnewlist(filteredData);
-
   }, [searchItem]);
-
- 
 
   const handleRangeChange = (event) => {
     const newValue = parseInt(event.target.value, 10);
@@ -46,7 +42,6 @@ const Product = ({ searchItem, items, setItems }) => {
     }
 
     setSelectedBrands(updatedBrands);
-    
   };
 
   const filteredDetails = details.filter(
@@ -72,7 +67,6 @@ const Product = ({ searchItem, items, setItems }) => {
 
   return (
     <>
-     
       <div className={style.main}>
         <div className={style.side}>
           <div className={style.sideimg}>
@@ -149,13 +143,16 @@ const Product = ({ searchItem, items, setItems }) => {
         </div>
 
         <div className={style.img}>
-       
-          {newlist.map((product, index) => (
-            <div key={index}>
-              <p>{product.img}</p>
+        {newlist.map((product, index) => (
+        <div key={index}>
+          <Link to={`/shoe_product/${index}`}>
+            <p> {product.img} </p>
+          </Link>
+
               <p>{product.Product}</p>
               <p>{product.Product_brand}</p>
               <p>Rs {product.Price} /-</p>
+
               <button className={style.addcart} onClick={added}>
                 Add To Cart
               </button>
